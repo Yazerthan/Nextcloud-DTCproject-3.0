@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'nextcloud/richdocuments',
-        'pretty_version' => 'v9.0.0',
-        'version' => '9.0.0.0',
-        'reference' => '8e84ce3a99a53bf04ed7a20e03f0f099c664fce1',
+        'pretty_version' => 'v9.0.1',
+        'version' => '9.0.1.0',
+        'reference' => '18d41d7acc055777086a207c6152b97fdc394659',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -83,9 +83,9 @@
             'dev_requirement' => false,
         ),
         'nextcloud/richdocuments' => array(
-            'pretty_version' => 'v9.0.0',
-            'version' => '9.0.0.0',
-            'reference' => '8e84ce3a99a53bf04ed7a20e03f0f099c664fce1',
+            'pretty_version' => 'v9.0.1',
+            'version' => '9.0.1.0',
+            'reference' => '18d41d7acc055777086a207c6152b97fdc394659',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

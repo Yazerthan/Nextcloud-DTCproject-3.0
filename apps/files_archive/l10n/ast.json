@@ -1,5 +1,6 @@
 { "translations": {
     "File or folder could not be found." : "Nun se pudo atopar el ficheru o la carpeta",
+    "not found" : "nun s'atopó",
     "User" : "Usuariu",
     "Password" : "Contraseña",
     "Login succeeded." : "L'aniciu de la sesión foi correutu.",
@@ -12,14 +13,14 @@
     "MIME type" : "Tipu MIME",
     "Disconnect storage" : "Desconectar l'almacenamientu",
     "Archive" : "Archivar",
+    "No" : "Non",
+    "Yes" : "Sí",
+    "true" : "true",
     "OK" : "Normal",
     "Forbidden" : "Prohíbese",
     "Not Found" : "Nun s'atopó",
     "Internal Server Error" : "Error internu del sirvidor",
     "Error" : "Error",
-    "Missing data" : "Falten datos",
-    "Yes" : "Sí",
-    "No" : "Non",
-    "true" : "true"
+    "Missing data" : "Falten datos"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

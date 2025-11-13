@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'nextcloud/forms',
-        'pretty_version' => 'v5.2.1',
-        'version' => '5.2.1.0',
-        'reference' => '7a43d17230b4e6b9fd5f42638b062878a3fb8e54',
+        'pretty_version' => 'v5.2.2',
+        'version' => '5.2.2.0',
+        'reference' => '1c823e6e4e2dd830da2bc388816dce871b44cab3',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -56,9 +56,9 @@
             'dev_requirement' => false,
         ),
         'nextcloud/forms' => array(
-            'pretty_version' => 'v5.2.1',
-            'version' => '5.2.1.0',
-            'reference' => '7a43d17230b4e6b9fd5f42638b062878a3fb8e54',
+            'pretty_version' => 'v5.2.2',
+            'version' => '5.2.2.0',
+            'reference' => '1c823e6e4e2dd830da2bc388816dce871b44cab3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

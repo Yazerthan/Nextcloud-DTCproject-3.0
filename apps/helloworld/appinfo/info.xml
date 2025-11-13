@@ -3,16 +3,16 @@
 	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
 	<id>helloworld</id>
 	<name>Hello World</name>
-	<summary>HelloWorld</summary>
-	<description>Discovering nextcloud developpement with this</description>
+	<summary>Descript courte de mon app</summary>
+	<description><![CDATA[description longue de l'applicaiton]]></description>
 	<version>1.0.0</version>
 	<licence>agpl</licence>
-	<author mail="yatherthan@gmail.com" homepage="">Nathan</author>
+	<author mail="mail@mail.com" homepage="">timouth-v56</author>
 	<namespace>HelloWorld</namespace>
 	<category>tools</category>
-	<bugs>http://text.com</bugs>
+	<bugs>http://test.com</bugs>
 	<dependencies>
-		<nextcloud min-version="31" max-version="33"/>
+		<nextcloud min-version="30" max-version="32"/>
 	</dependencies>
 	<navigations>
 		<navigation>

@@ -18,7 +18,7 @@
 * 🌉 **Sync with other chat solutions** With [Matterbridge](https://github.com/42wim/matterbridge/) being integrated in Talk, you can easily sync a lot of other chat solutions to Nextcloud Talk and vice-versa.
 ]]></description>
 
-	<version>22.0.0</version>
+	<version>22.0.2</version>
 	<licence>agpl</licence>
 
 	<author>Anna Larch</author>
@@ -39,6 +39,12 @@
 		<dav />
 		<prevent_group_restriction />
 	</types>
+
+	<documentation>
+		<user>https://docs.nextcloud.com/server/latest/user_manual/en/talk/index.html</user>
+		<admin>https://nextcloud-talk.readthedocs.io/en/latest/#administration-documentation</admin>
+		<developer>https://nextcloud-talk.readthedocs.io/en/latest/#developer-documentation</developer>
+	</documentation>
 
 	<category>multimedia</category>
 	<category>social</category>
@@ -87,6 +93,7 @@
 
 	<commands>
 		<command>OCA\Talk\Command\Bot\Install</command>
+		<command>OCA\Talk\Command\Bot\Create</command>
 		<command>OCA\Talk\Command\Bot\ListBots</command>
 		<command>OCA\Talk\Command\Bot\Remove</command>
 		<command>OCA\Talk\Command\Bot\State</command>

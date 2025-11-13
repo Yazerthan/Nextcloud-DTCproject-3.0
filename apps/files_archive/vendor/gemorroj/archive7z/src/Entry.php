@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Archive7z;
 
 /*
@@ -187,7 +189,7 @@ class Entry
 
     public function isDirectory(): bool
     {
-        return '+' === $this->folder || false !== \strpos((string) $this->attributes, 'D');
+        return '+' === $this->folder || \str_contains((string) $this->attributes, 'D');
     }
 
     public function isEncrypted(): bool

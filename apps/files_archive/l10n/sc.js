@@ -8,6 +8,9 @@ OC.L10N.register(
     "MIME type" : "Genia de MIME",
     "Disconnect storage" : "Disconnete archiviatzione",
     "Archive" : "Cartella",
+    "close" : "serra",
+    "No" : "No",
+    "Yes" : "Si",
     "OK" : "AB",
     "Created" : "Creadu",
     "Unauthorized" : "No autorizadu",
@@ -15,8 +18,6 @@ OC.L10N.register(
     "Not Found" : "No agatadu",
     "Conflict" : "Cuntierra",
     "Internal Server Error" : "Errore internu de su serbidore",
-    "Error" : "Errore",
-    "Yes" : "Si",
-    "No" : "No"
+    "Error" : "Errore"
 },
 "nplurals=2; plural=(n != 1);");

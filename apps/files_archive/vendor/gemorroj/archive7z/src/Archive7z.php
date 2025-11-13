@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Archive7z;
 
 use Symfony\Component\Process\Process;
@@ -89,11 +91,31 @@ class Archive7z
      *
      * @throws Exception
      */
-    public function __construct(string $filename, string $binary7z = null, ?float $timeout = 60.0)
+    public function __construct(string $filename, ?string $binary7z = null, ?float $timeout = 60.0)
     {
         $this->filename = $filename;
         $this->timeout = $timeout;
         $this->binary7z = static::makeBinary7z($binary7z);
+    }
+
+    /**
+     * @param string|null $binary7z 7-zip binary path
+     *
+     * @throws Exception
+     */
+    public static function get7zipInformation(?string $binary7z = null): string
+    {
+        $binary7z ??= static::makeBinary7z($binary7z);
+
+        $cmd = [
+            \str_replace('\\', '/', $binary7z),
+            'i',
+        ];
+
+        $process = new Process($cmd);
+        $process->mustRun();
+
+        return $process->getOutput();
     }
 
     public function getOutputDirectory(): string
@@ -317,7 +339,7 @@ class Archive7z
      *
      * @return Entry[]
      */
-    public function getEntries(string $pathMask = null, int $limit = null): array
+    public function getEntries(?string $pathMask = null, ?int $limit = null): array
     {
         $process = $this->makeProcess('l', \array_merge(
             ['-slt'],

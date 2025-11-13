@@ -2,18 +2,18 @@
 
 [![License](https://poser.pugx.org/gemorroj/archive7z/license)](https://packagist.org/packages/gemorroj/archive7z)
 [![Latest Stable Version](https://poser.pugx.org/gemorroj/archive7z/v/stable)](https://packagist.org/packages/gemorroj/archive7z)
-[![Continuous Integration](https://github.com/Gemorroj/Archive7z/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/Gemorroj/Archive7z/actions?query=workflow%3A%22Continuous+Integration%22)
+[![Continuous Integration](https://github.com/Gemorroj/Archive7z/workflows/Continuous%20Integration/badge.svg)](https://github.com/Gemorroj/Archive7z/actions?query=workflow%3A%22Continuous+Integration%22)
 
 
 ### Features:
 
-- Support all 7-zip formats: `7z`, `XZ`, `BZIP2`, `GZIP`, `TAR`, `ZIP`, `WIM`, `AR`, `ARJ`, `CAB`, `CHM`, `CPIO`, `CramFS`, `DMG`, `EXT`, `FAT`, `GPT`, `HFS`, `IHEX`, `ISO`, `LZH`, `LZMA`, `MBR`, `MSI`, `NSIS`, `NTFS`, `QCOW2`, `RAR`, `RPM`, `SquashFS`, `UDF`, `UEFI`, `VDI`, `VHD`, `VMDK`, `WIM`, `XAR` and `Z`
-- Unpacking archives
-- Extract any directory or file
+- Supported all 7-zip formats:
+    - Packing / unpacking: `7z`, `XZ`, `BZIP2`, `GZIP`, `TAR`, `ZIP` and `WIM`.
+    - Unpacking only: `APFS`, `AR`, `ARJ`, `Base64`, `CAB`, `CHM`, `CPIO`, `CramFS`, `DMG`, `EXT`, `FAT`, `GPT`, `HFS`, `IHEX`, `ISO`, `LZH`, `LZMA`, `MBR`, `MSI`, `NSIS`, `NTFS`, `QCOW2`, `RAR`, `RPM`, `SquashFS`, `UDF`, `UEFI`, `VDI`, `VHD`, `VHDX`, `VMDK`, `XAR` and `Z`.
 - List files and directories
 - Get contents of any file from archive
-- Delete files or directories (not `RAR`)
-- Add files or directories (not `RAR`)
+- Delete files or directories
+- Add files or directories
 
 
 ### Requirements:
@@ -21,7 +21,7 @@
 - PHP >= 8.0.2
 - allow [proc_open](https://www.php.net/proc_open) function
 - for Windows: 7-zip >= 7.30 (https://www.7-zip.org/)
-- for Linux/MacOs: p7zip >= 9.38 (https://github.com/p7zip-project/p7zip). UPD: original 7-zip supports linux since 21.01 version?
+- for Linux/MacOs: 7-zip >= 21.01 or p7zip >= 9.38 (https://github.com/p7zip-project/p7zip)
 
 
 ### Installation:

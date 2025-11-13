@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => 'v5.5.7',
-        'version' => '5.5.7.0',
-        'reference' => 'ddbcea104a9241f12b76ed5a77e9eab8a63ed5e8',
+        'pretty_version' => 'v5.5.14',
+        'version' => '5.5.14.0',
+        'reference' => 'aec2abcd31cc581b6c8ca29b9a7c0f6e0125da71',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'v5.5.7',
-            'version' => '5.5.7.0',
-            'reference' => 'ddbcea104a9241f12b76ed5a77e9eab8a63ed5e8',
+            'pretty_version' => 'v5.5.14',
+            'version' => '5.5.14.0',
+            'reference' => 'aec2abcd31cc581b6c8ca29b9a7c0f6e0125da71',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -391,9 +391,9 @@
             'dev_requirement' => false,
         ),
         'phpmailer/dkimvalidator' => array(
-            'pretty_version' => 'v0.3',
-            'version' => '0.3.0.0',
-            'reference' => '49b65b1c0e022afdbac7afa89c997d74606fc881',
+            'pretty_version' => 'v0.3.1',
+            'version' => '0.3.1.0',
+            'reference' => 'ce691bdbb8a2f122cdfa315169bc0e1cd1965b77',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpmailer/dkimvalidator',
             'aliases' => array(),

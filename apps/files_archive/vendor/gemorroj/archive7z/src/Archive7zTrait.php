@@ -1,17 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Archive7z;
 
 trait Archive7zTrait
 {
     /**
-     * 7z uses plugins (7z.so and Codecs/Rar.so) to handle archives.
-     * 7za is a stand-alone executable (7za handles less archive formats than 7z).
-     * 7zr is a light stand-alone executable that supports only 7z/LZMA/BCJ/BCJ2.
+     * 7zz  (7-Zip) - standalone full version of 7-Zip that supports all formats.
+     * 7zzs (7-Zip) - standalone full version of 7-Zip that supports all formats (static library linking).
+     * 7z  (p7zip) - 7-Zip that requires 7z.so shared library, and it supports all formats via 7z.so.
+     * 7zr (p7zip) - standalone reduced version of 7-Zip that supports some 7-Zip's formats: 7z, xz, lzma and split.
+     * 7za (p7zip) - standalone version of 7-Zip that supports some main formats: 7z, xz, lzma, zip, bzip2, gzip, tar, cab, ppmd and split.
      *
      * @var string[]
      */
-    protected static array $binary7zNix = ['/usr/bin/7z', '/usr/bin/7za', '/usr/local/bin/7z', '/usr/local/bin/7za'];
+    protected static array $binary7zNix = ['/usr/bin/7z', '/usr/bin/7za', '/usr/bin/7zz', '/usr/local/bin/7z', '/usr/local/bin/7za', '/usr/local/bin/7zz'];
     /**
      * @var string[]
      */
@@ -44,7 +48,7 @@ trait Archive7zTrait
     /**
      * @throws Exception
      */
-    protected static function makeBinary7z(string $binary7z = null): string
+    protected static function makeBinary7z(?string $binary7z = null): string
     {
         if (null === $binary7z) {
             $binary7z = static::getAutoBinary7z();

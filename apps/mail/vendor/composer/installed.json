@@ -2418,17 +2418,17 @@
         },
         {
             "name": "phpmailer/dkimvalidator",
-            "version": "v0.3",
-            "version_normalized": "0.3.0.0",
+            "version": "v0.3.1",
+            "version_normalized": "0.3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/DKIMValidator.git",
-                "reference": "49b65b1c0e022afdbac7afa89c997d74606fc881"
+                "reference": "ce691bdbb8a2f122cdfa315169bc0e1cd1965b77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/DKIMValidator/zipball/49b65b1c0e022afdbac7afa89c997d74606fc881",
-                "reference": "49b65b1c0e022afdbac7afa89c997d74606fc881",
+                "url": "https://api.github.com/repos/PHPMailer/DKIMValidator/zipball/ce691bdbb8a2f122cdfa315169bc0e1cd1965b77",
+                "reference": "ce691bdbb8a2f122cdfa315169bc0e1cd1965b77",
                 "shasum": ""
             },
             "require": {
@@ -2437,7 +2437,13 @@
                 "ext-openssl": "*",
                 "php": ">=7.2.0"
             },
-            "time": "2019-10-10T17:19:06+00:00",
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "nunomaduro/phpinsights": "^v1.9.0",
+                "phpunit/phpunit": "8.4.1",
+                "roave/security-advisories": "dev-master"
+            },
+            "time": "2025-10-09T12:29:49+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -2466,7 +2472,7 @@
             "description": "A DKIM signature validator in PHP.",
             "support": {
                 "issues": "https://github.com/PHPMailer/DKIMValidator/issues",
-                "source": "https://github.com/PHPMailer/DKIMValidator/tree/v0.3"
+                "source": "https://github.com/PHPMailer/DKIMValidator/tree/v0.3.1"
             },
             "install-path": "../phpmailer/dkimvalidator"
         },

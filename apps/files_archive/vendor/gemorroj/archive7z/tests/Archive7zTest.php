@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Archive7z\Tests;
 
 use Archive7z\Archive7z;
@@ -49,6 +51,12 @@ class Archive7zTest extends TestCase
             }
         }
         \closedir($h);
+    }
+
+    public function testGet7zipInformation(): void
+    {
+        $info = Archive7z::get7zipInformation();
+        self::assertStringContainsString('7-Zip', $info);
     }
 
     public function testSetGetOutputDirectory(): void
@@ -865,5 +873,14 @@ class Archive7zTest extends TestCase
 
         self::assertIsArray($entries);
         self::assertCount(3, $entries); // 1 folder + 2 files in the folder
+    }
+
+    public function testPartialRar(): void
+    {
+        $obj = new Archive7z($this->fixturesDir.'/winrar-7.0/partial/WinRAR.part1.rar');
+        $entries = $obj->getEntries();
+
+        self::assertIsArray($entries);
+        self::assertCount(1, $entries);
     }
 }

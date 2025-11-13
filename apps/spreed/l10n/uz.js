@@ -1,6 +1,15 @@
 OC.L10N.register(
     "spreed",
     {
+    "a conversation" : "Suhbat",
+    "(Duration %s)" : "(Davomiylik %s)",
+    "You attended a call with {user1}" : "Siz {user1} bilan suhbatda ishtirok etdingiz",
+    "_%n guest_::_%n guests_" : ["%n mehmon"],
+    "You attended a call with {user1} and {user2}" : "Siz {user1} va {user2} bilan suhbatda ishtirok etdingiz",
+    "You attended a call with {user1}, {user2} and {user3}" : "Siz {user1}, {user2} va {user3} bilan suhbatda ishtirok etdingiz",
+    "You attended a call with {user1}, {user2}, {user3} and {user4}" : "Siz {user1}, {user2}, {user3} va {user4} bilan suhbatda ishtirok etdingiz",
+    "You attended a call with {user1}, {user2}, {user3}, {user4} and {user5}" : "Siz {user1}, {user2}, {user3}, {user4} va {user5} bilan suhbatda ishtirok etdingiz",
+    "_%n other_::_%n others_" : ["%n boshqalar"],
     "Incoming call" : "Kiruvchi qo'ng'iroq",
     "Message deleted by author" : "Xabar muallif tomonidan o'chirildi",
     "Deleted user" : "Deleted user",
@@ -37,6 +46,7 @@ OC.L10N.register(
     "Reset" : "Qayta tiklash",
     "Back" : "Orqaga",
     "Cancel" : "Bekor qilish",
+    "Now" : "Hozir",
     "From" : "Dan",
     "To" : "Gacha",
     "Calendar" : "Calendar",
@@ -115,10 +125,9 @@ OC.L10N.register(
     "Away" : "Away",
     "The password is wrong. Try again." : "Parol noto'g'ri. Qayta urinib ko'ring.",
     "Tasks" : "Tasks",
-    "Notes" : "Notes",
+    "Notes" : "Eslatmalar",
     "Reports" : "Hisobotlar",
     "Today" : "Today",
-    "Yesterday" : "Kecha",
-    "Close" : "Yopish"
+    "Yesterday" : "Kecha"
 },
 "nplurals=1; plural=0;");

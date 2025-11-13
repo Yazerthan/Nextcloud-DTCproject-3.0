@@ -2,6 +2,7 @@ OC.L10N.register(
     "files_archive",
     {
     "File or folder could not be found." : "Bestand of map kon niet worden gevonden",
+    "Error: %s" : "Fout: %s",
     "Post to endpoint \"%s\" not implemented." : "'Post' aanvraag naar eindpunt \"%s\" is niet geïmplementeerd",
     "Post to base URL of app \"%s\" not allowed." : "'Post' aanvraag naar basis URL of de \" %s\" is niet geïmplementeerd",
     "Get from endpoint \"%s\" not implemented." : "'Get' aanvraag naar eindpunt \"%s\" is niet geïmplementeerd",
@@ -13,14 +14,21 @@ OC.L10N.register(
     "Unknown personal setting: \"%s\"." : "Onbekende persoonlijke instelling: \"%s\"",
     "Unable to parse memory size limit \"%s\"" : "Kan geheugengrootelimitiet \"%s\" niet verwerken",
     "Unsupported subject: \"%s\"." : "Het volgende onderwerp word niet ondersteunt\" \"%s\"",
+    "not found" : "niet gevonden",
+    "Please install the \"%s\" program on the server." : "Gelieve het programma \"%s\" op de server te installeren.",
     "User" : "Gebruiker",
     "Password" : "Wachtwoord",
+    "%1$s (renamed)" : "%1$s (hernoemd)",
+    "renamed file" : "bestand hernoemd",
     "bytes" : "bytes",
     "submit" : "versturen",
     "unknown" : "onbekend",
     "MIME type" : "MIME type",
     "Disconnect storage" : "Verbinding met opslag verbreken",
     "Archive" : "Archiveren",
+    "close" : "sluiten",
+    "No" : "Nee",
+    "Yes" : "Ja",
     "OK" : "OK",
     "Created" : "Gemaakt",
     "Accepted" : "Geaccepteerd",
@@ -41,7 +49,6 @@ OC.L10N.register(
     "Error" : "Fout",
     "Internal Error" : "Interne fout",
     "Missing data" : "Ontbrekende gegevens",
-    "Yes" : "Ja",
-    "No" : "Nee"
+    "Debug Information" : "Foutopsporingsinformatie"
 },
 "nplurals=2; plural=(n != 1);");

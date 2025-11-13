@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Archive7z;
 
 class Parser
@@ -85,7 +87,7 @@ class Parser
     /**
      * @return array<int, array<string, string|string[]>>
      */
-    public function parseEntries(int $limit = null): array
+    public function parseEntries(?int $limit = null): array
     {
         $isHead = true;
         $list = [];

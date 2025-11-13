@@ -3,10 +3,15 @@ OC.L10N.register(
     {
     "User" : "Notandi",
     "Password" : "Lykilorð",
+    "%1$s (renamed)" : "%1$s (endurnefnd)",
+    "renamed file" : "endurnefndi skrá",
     "bytes" : "bæti",
     "unknown" : "óþekkt",
     "Disconnect storage" : "Aftengja geymslu",
     "Archive" : "Safn",
+    "close" : "loka",
+    "No" : "Nei",
+    "Yes" : "Já",
     "OK" : "Í lagi",
     "Created" : "Búið til þann",
     "Unauthorized" : "Ekki heimilað",
@@ -14,8 +19,6 @@ OC.L10N.register(
     "Not Found" : "Fannst ekki",
     "Conflict" : "Stangast á",
     "Internal Server Error" : "Innri villa",
-    "Error" : "Villa",
-    "Yes" : "Já",
-    "No" : "Nei"
+    "Error" : "Villa"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

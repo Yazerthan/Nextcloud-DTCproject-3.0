@@ -1,11 +1,11 @@
 {
 	"name": "nextcloud/helloworld",
-	"description": "Discovering nextcloud developpement with this",
+	"description": "<![CDATA[description longue de l'applicaiton]]>",
 	"license": "AGPL-3.0-or-later",
 	"authors": [
 		{
-			"name": "Nathan",
-			"email": "yatherthan@gmail.com",
+			"name": "timouth-v56",
+			"email": "mail@mail.com",
 			"homepage": ""
 		}
 	],

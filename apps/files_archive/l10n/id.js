@@ -6,6 +6,9 @@ OC.L10N.register(
     "unknown" : "tidak diketahui",
     "Disconnect storage" : "Memutuskan penyimpaan",
     "Archive" : "Arsip",
+    "close" : "tutup",
+    "No" : "Tidak",
+    "Yes" : "Ya",
     "OK" : "OK",
     "Created" : "Dibuat",
     "Forbidden" : "Terlarang",
@@ -13,8 +16,6 @@ OC.L10N.register(
     "Conflict" : "Konflik",
     "Internal Server Error" : "Galat Server Internal",
     "Error" : "Galat",
-    "Missing data" : "Data tidak ada",
-    "Yes" : "Ya",
-    "No" : "Tidak"
+    "Missing data" : "Data tidak ada"
 },
 "nplurals=1; plural=0;");

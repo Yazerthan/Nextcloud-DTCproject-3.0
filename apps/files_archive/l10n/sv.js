@@ -3,11 +3,17 @@ OC.L10N.register(
     {
     "User" : "Användare",
     "Password" : "Lösenord",
+    "%1$s (renamed)" : "%1$s (omdöpt)",
+    "renamed file" : "omdöpt fil",
     "bytes" : "byte",
+    "submit" : "skicka",
     "Choose a folder" : "Välj en mapp",
     "unknown" : "okänt",
     "Disconnect storage" : "Koppla bort lagring",
     "Archive" : "Arkivera",
+    "close" : "stäng",
+    "No" : "Nej",
+    "Yes" : "Ja",
     "OK" : "OK",
     "Created" : "Skapat",
     "Unauthorized" : "Obehörig",
@@ -16,8 +22,6 @@ OC.L10N.register(
     "Conflict" : "Konflikt",
     "Internal Server Error" : "Internt Serverfel",
     "Error" : "Fel",
-    "Missing data" : "Saknad data",
-    "Yes" : "Ja",
-    "No" : "Nej"
+    "Missing data" : "Saknad data"
 },
 "nplurals=2; plural=(n != 1);");

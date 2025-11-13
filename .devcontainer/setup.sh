@@ -31,3 +31,22 @@ if [[ ! $(sudo -u ${APACHE_RUN_USER} php occ status) =~ installed:[[:space:]]*tr
 fi
 
 sudo service apache2 restart
+
+# Activer automatiquement les apps utiles
+echo "🔧 Activation des apps communes..."
+sudo -u ${APACHE_RUN_USER} php occ app:enable files || true
+sudo -u ${APACHE_RUN_USER} php occ app:enable dashboard || true
+sudo -u ${APACHE_RUN_USER} php occ app:enable helloworld || true
+
+# Copier une configuration partagée (si vous en avez une dans le repo)
+if [ -f .devcontainer/shared.config.php ]; then
+  echo "📦 Application de la configuration commune..."
+  cp .devcontainer/shared.config.php config/config.php
+fi
+
+# Créer des utilisateurs de test si besoin
+if ! sudo -u ${APACHE_RUN_USER} php occ user:list | grep -q 'nathan'; then
+  sudo -u ${APACHE_RUN_USER} php occ user:add --password-from-env nathan
+fi
+
+echo "✅ Setup terminé ! Nextcloud prêt sur http://localhost:8080"

@@ -24,8 +24,6 @@ OC.L10N.register(
     "A password is given, but not an LDAP agent" : "Tugtar pasfhocal, ach ní thugtar do ghníomhaire LDAP",
     "No password is given for the user agent" : "Ní thugtar aon phasfhocal don ghníomhaire úsáideora",
     "No LDAP base DN was given" : "Níor tugadh bonn LDAP DN",
-    "User base DN is not a subnode of global base DN" : "Ní fonód de bhonn domhanda DN é an bonn úsáideora DN",
-    "Group base DN is not a subnode of global base DN" : "Ní fonód de bhonn domhanda DN é bonnghrúpa DN",
     "Login filter does not contain %s placeholder." : "Níl %s coinneálaí logála isteach sa scagaire logála isteach.",
     "Please login with the new password" : "Logáil isteach leis an bpasfhocal nua le do thoil",
     "LDAP User backend" : "Inneall Úsáideora LDAP",
@@ -193,7 +191,7 @@ OC.L10N.register(
     "Clear Groupname-LDAP Group Mapping" : "Glan Léarscáiliú Grúpa Ainm an Ghrúpa-LDAP",
     "Confirm action" : "Deimhnigh gníomh",
     "Are you sure you want to permanently delete this LDAP configuration? This cannot be undone." : "An bhfuil tú cinnte gur mian leat an chumraíocht LDAP seo a scriosadh go buan? Ní féidir é seo a chealú.",
-    "Fail to delete config" : "Theip ar an gcumraíocht a scriosadh",
+    "Failed to delete config" : "Theip ar an gcumraíocht a scriosadh",
     "Are you sure you want to permanently clear the LDAP mapping? This cannot be undone." : "An bhfuil tú cinnte gur mian leat mapáil LDAP a ghlanadh go buan? Ní féidir é seo a chealú.",
     "Mapping cleared" : "Glanadh an mapáil",
     "Failed to clear mapping" : "Theip ar an mapáil a ghlanadh",
@@ -261,9 +259,9 @@ OC.L10N.register(
     "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it." : "<b>Rabhadh:</b> Níl an modúl PHP LDAP suiteáilte, ní oibreoidh an t-inneall. Iarr ar do riarthóir córais é a shuiteáil le do thoil.",
     "Not recommended, use it for testing only! If connection only works with this option, import the LDAP server's SSL certificate in your %s server." : "Ní mholtar é, bain úsáid as le haghaidh tástála amháin! Mura n-oibríonn an ceangal ach leis an rogha seo, iompórtáil teastas SSL an fhreastalaí LDAP i do fhreastalaí %s.",
     "\"$home\" Placeholder Field" : "Réimse Sealbhóir Áite \"$home\".",
-    "UUID Attribute for Users:" : "Tréith UUID d'Úsáideoirí:",
-    "UUID Attribute for Groups:" : "Tréith UUID do Ghrúpaí:",
     "Pronouns Field" : "Réimse Forainmneacha",
-    "User profile Pronouns will be set from the specified attribute" : "Socrófar Forainmneacha próifíle úsáideora ón aitreabúid sonraithe"
+    "User profile Pronouns will be set from the specified attribute" : "Socrófar Forainmneacha próifíle úsáideora ón aitreabúid sonraithe",
+    "UUID Attribute for Users:" : "Tréith UUID d'Úsáideoirí:",
+    "UUID Attribute for Groups:" : "Tréith UUID do Ghrúpaí:"
 },
 "nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);");

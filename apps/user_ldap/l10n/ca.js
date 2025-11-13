@@ -23,8 +23,6 @@ OC.L10N.register(
     "A password is given, but not an LDAP agent" : "Es dóna una contrasenya, però no un agent LDAP",
     "No password is given for the user agent" : "No es dóna cap contrasenya per a l'agent d'usuari",
     "No LDAP base DN was given" : "No s'ha donat cap DN base LDAP",
-    "User base DN is not a subnode of global base DN" : "El DN base d'usuari no és un subnode del DN base global",
-    "Group base DN is not a subnode of global base DN" : "El DN base del grup no és un subnode del DN base global",
     "Please login with the new password" : "Inicieu sessió amb la nova contrasenya",
     "LDAP User backend" : "Rerefons d'usuari LDAP",
     "Your password will expire tomorrow." : "La contrasenya caducarà demà.",
@@ -232,9 +230,9 @@ OC.L10N.register(
     "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it." : "<b>Avís:</b> El mòdul PHP LDAP no està instal·lat, el rerefons no funcionarà. Demaneu a l'administrador del sistema que l'instal·li.",
     "Not recommended, use it for testing only! If connection only works with this option, import the LDAP server's SSL certificate in your %s server." : "No es recomana, useu-ho només com a prova! Importeu el certificat SSL del servidor LDAP al servidor %s només si la connexió funciona amb aquesta opció.",
     "\"$home\" Placeholder Field" : "Camp de marcador de posició \"$home\"",
-    "UUID Attribute for Users:" : "Atribut UUID per Usuaris:",
-    "UUID Attribute for Groups:" : "Atribut UUID per Grups:",
     "Pronouns Field" : "Camp de pronoms",
-    "User profile Pronouns will be set from the specified attribute" : "Els pronoms al Perfil d’usuari s’establiran a partir de l'atribut especificat"
+    "User profile Pronouns will be set from the specified attribute" : "Els pronoms al Perfil d’usuari s’establiran a partir de l'atribut especificat",
+    "UUID Attribute for Users:" : "Atribut UUID per Usuaris:",
+    "UUID Attribute for Groups:" : "Atribut UUID per Grups:"
 },
 "nplurals=2; plural=(n != 1);");

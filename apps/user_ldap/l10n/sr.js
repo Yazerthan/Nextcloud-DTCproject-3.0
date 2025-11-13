@@ -13,6 +13,7 @@ OC.L10N.register(
     "Invalid data specified" : "Наведени су неисправни подаци",
     "Could not set configuration %1$s to %2$s" : "Конфигурација %1$s није могла да се постави на %2$s",
     "Action does not exist" : "Радња не постоји",
+    "Renewing …" : "Обнавља се …",
     "Very weak password" : "Веома слаба лозинка",
     "Weak password" : "Слаба лозинка",
     "So-so password" : "Осредња лозинка",
@@ -23,8 +24,6 @@ OC.L10N.register(
     "A password is given, but not an LDAP agent" : "Лозинка је наведена, али LDAP агент није",
     "No password is given for the user agent" : "Није наведена ниједна лозинка за корисничког агента",
     "No LDAP base DN was given" : "Није наведен ниједан LDAP базни DN",
-    "User base DN is not a subnode of global base DN" : "Корисников базни DN није подчвор глобалног базног DN",
-    "Group base DN is not a subnode of global base DN" : "Базни DN групе није подчвор глобалног базног DN",
     "Login filter does not contain %s placeholder." : "Филтер пријаве не садржи %s чувар места",
     "Please login with the new password" : "Пријавите се са новом лозинком",
     "LDAP User backend" : "Позадински механизам за LDAP кориснике",
@@ -192,7 +191,7 @@ OC.L10N.register(
     "Clear Groupname-LDAP Group Mapping" : "Очисти Groupname-LDAP мапирање група",
     "Confirm action" : "Потврди акцију",
     "Are you sure you want to permanently delete this LDAP configuration? This cannot be undone." : "Да ли заиста желите да трајно обришете ову LDAP конфигурацију? Ово не може да се поништи.",
-    "Fail to delete config" : "Није успело брисање конфигурације",
+    "Failed to delete config" : "Није успело брисање конфигурације",
     "Are you sure you want to permanently clear the LDAP mapping? This cannot be undone." : "Да ли заиста желите да трајно обришете ово LDAP мапирање? Ово не може да се поништи.",
     "Mapping cleared" : "Мапирање је обрисано",
     "Failed to clear mapping" : "Није успело брисање мапирања",
@@ -260,9 +259,9 @@ OC.L10N.register(
     "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it." : "<b>Упозорење:</b> PHP LDAP модул није инсталиран и зачеље неће радити. Питајте систем администратора да га инсталира.",
     "Not recommended, use it for testing only! If connection only works with this option, import the LDAP server's SSL certificate in your %s server." : "Није препоручено, користите само за тестирање! Ако веза ради само са овом опцијом, увезите SSL сертификате LDAP сервера на ваш %s сервер.",
     "\"$home\" Placeholder Field" : "Резервисано место за поље „$home“",
-    "UUID Attribute for Users:" : "UUID параметри за кориснике:",
-    "UUID Attribute for Groups:" : "UUID параметри за групе:",
     "Pronouns Field" : "Поље заменица",
-    "User profile Pronouns will be set from the specified attribute" : "Заменице корисничког профила ће се поставити из наведеног атрибута"
+    "User profile Pronouns will be set from the specified attribute" : "Заменице корисничког профила ће се поставити из наведеног атрибута",
+    "UUID Attribute for Users:" : "UUID параметри за кориснике:",
+    "UUID Attribute for Groups:" : "UUID параметри за групе:"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

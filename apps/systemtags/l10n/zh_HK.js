@@ -56,6 +56,7 @@ OC.L10N.register(
     "Failed to delete tag" : "刪除標籤失敗",
     "Create or edit tags" : "創建或編輯標籤",
     "Search for a tag to edit" : "搜尋要編輯的標籤",
+    "Collaborative tags …" : "協作的標籤 ...",
     "No tags to select" : "未選取標籤",
     "Tag name" : "標籤名稱",
     "Tag level" : "標籤層級",
@@ -86,6 +87,7 @@ OC.L10N.register(
     "Failed to load tags" : "載入標記失敗",
     "Failed to select tag" : "無法選擇標籤",
     "System admin disabled tag creation. You can only use existing ones." : "系統管理員已停用標籤建立功能。您僅能使用現有的。",
+    "Loading collaborative tags …" : "正在載入協作標籤 …",
     "Search or create collaborative tags" : "搜索或創建協作標籤",
     "No tags to select, type to create a new tag" : "沒有可供選擇的標籤，鍵入以創建新標籤",
     "Unable to update setting" : "無法更新設定",
@@ -109,10 +111,10 @@ OC.L10N.register(
     "Failed to delete tag for file" : "無法刪除檔案的標籤",
     "Collaborative tags …" : "協作的標籤 ...",
     "Loading …" : "加載中 …",
-    "Loading collaborative tags …" : "正在載入協作標籤 ...",
     "File tags modification canceled" : "檔案標籤修改已取消",
     "Select or create tags to apply to all selected files" : "選擇或創建標籤以應用於所有已選擇的檔案。",
     "Select tags to apply to all selected files" : "選取要套用到所有選取檔案的標籤",
-    "Apply changes" : "應用更新"
+    "Apply changes" : "應用更新",
+    "Loading collaborative tags …" : "正在載入協作標籤 ..."
 },
 "nplurals=1; plural=0;");

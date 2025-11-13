@@ -56,6 +56,7 @@ OC.L10N.register(
     "Failed to delete tag" : "Ознака није могла да се обрише",
     "Create or edit tags" : "Креирај или уреди ознаке",
     "Search for a tag to edit" : "Претрага ознаке за уређивање",
+    "Collaborative tags …" : "Ознаке сарадње …",
     "No tags to select" : "Нема ниједне ознаке која може да се изабере",
     "Tag name" : "Назив ознаке",
     "Tag level" : "Ниво ознаке",
@@ -86,6 +87,7 @@ OC.L10N.register(
     "Failed to load tags" : "Грешка при учитавању ознака",
     "Failed to select tag" : "Ознака није могла да се изабере",
     "System admin disabled tag creation. You can only use existing ones." : "Админ система је искључио креирање ознака. Можете да употребљавате само постојеће ознаке.",
+    "Loading collaborative tags …" : "Учитавају се ознаке сарадње …",
     "Search or create collaborative tags" : "Претражите или креирајте ознаке за сарадњу",
     "No tags to select, type to create a new tag" : "Није изабрана ниједна ознака, куцајте да креирате нову ознаку",
     "Unable to update setting" : "Није успело ажурирање подешавања",
@@ -109,10 +111,10 @@ OC.L10N.register(
     "Failed to delete tag for file" : "Није успело брисање ознака за фајл",
     "Collaborative tags …" : "Ознаке сарадње...",
     "Loading …" : "Учитавање…",
-    "Loading collaborative tags …" : "Учитавају се ознаке сарадње…",
     "File tags modification canceled" : "Отказана је измена ознака фајла",
     "Select or create tags to apply to all selected files" : "Избор или креирање ознака које ће се применити на све изабране фајлове",
     "Select tags to apply to all selected files" : "Изаберите ознаке које ће се применити на све изабране фајлове",
-    "Apply changes" : "Примени измене"
+    "Apply changes" : "Примени измене",
+    "Loading collaborative tags …" : "Учитавају се ознаке сарадње…"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

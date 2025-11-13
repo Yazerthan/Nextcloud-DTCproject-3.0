@@ -23,8 +23,6 @@ OC.L10N.register(
     "A password is given, but not an LDAP agent" : "Se proporcionó una contraseña, pero no un agente LDAP",
     "No password is given for the user agent" : "No se proporcionó una contraseña para el agente de usuario",
     "No LDAP base DN was given" : "No se proporcionó un DN base LDAP",
-    "User base DN is not a subnode of global base DN" : "El DN base de usuario no es un subnodo del DN base global",
-    "Group base DN is not a subnode of global base DN" : "El DN base de grupo no es un subnodo del DN base global",
     "Login filter does not contain %s placeholder." : "El filtro de inicio de sesión no contiene el marcador de posición %s.",
     "Please login with the new password" : "Por favor, entra con la nueva contraseña",
     "LDAP User backend" : "Motor de usuarios LDAP",
@@ -234,9 +232,9 @@ OC.L10N.register(
     "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it." : "<b>Advertencia:</b> El módulo LDAP de PHP no está instalado, el sistema no funcionará. Por favor consulte al administrador del sistema para instalarlo.",
     "Not recommended, use it for testing only! If connection only works with this option, import the LDAP server's SSL certificate in your %s server." : "No se recomienda, ¡utilícelo únicamente para pruebas! Si la conexión sólo funciona con esta opción, importe el certificado SSL del servidor LDAP en su servidor %s.",
     "\"$home\" Placeholder Field" : "Marcador de posición del Campo \"$home\"",
-    "UUID Attribute for Users:" : "Atributo UUID para usuarios:",
-    "UUID Attribute for Groups:" : "Atributo UUID para Grupos:",
     "Pronouns Field" : "Campo Pronombres",
-    "User profile Pronouns will be set from the specified attribute" : "Los pronombres en el perfil de usuario se asignarán en base al atributo especificado"
+    "User profile Pronouns will be set from the specified attribute" : "Los pronombres en el perfil de usuario se asignarán en base al atributo especificado",
+    "UUID Attribute for Users:" : "Atributo UUID para usuarios:",
+    "UUID Attribute for Groups:" : "Atributo UUID para Grupos:"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

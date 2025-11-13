@@ -21,8 +21,6 @@
     "A password is given, but not an LDAP agent" : "Pasahitza zehaztu da baina ez LDAP agentea",
     "No password is given for the user agent" : "Erabiltzaile agentearentzat ez da pasahitza zehaztu",
     "No LDAP base DN was given" : "Ez da zehaztu LDAP base DN",
-    "User base DN is not a subnode of global base DN" : "Erabiltzailearen base DN ez da base DN globalaren azpi-nodoa",
-    "Group base DN is not a subnode of global base DN" : "Taldearen base DN ez da base DN globalaren azpi-nodoa",
     "Login filter does not contain %s placeholder." : "Saioa hasteko iragazkiak ez du %s komodin karaktererik.",
     "Please login with the new password" : "Mesedez hasi saioa pasahitz berriarekin",
     "LDAP User backend" : "LDAP erabiltzaileen atzealdea",
@@ -231,9 +229,9 @@
     "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it." : "<b>Abisua:</b> PHPk behar duen LDAP modulua ez dago instalaturik, motorrak ez du funtzionatuko. Mesedez eskatu zure sistema kudeatzaileari instala dezan.",
     "Not recommended, use it for testing only! If connection only works with this option, import the LDAP server's SSL certificate in your %s server." : "Ez da gomendagarria, erabili bakarrik probarako! Konexioak aukera hau ezinbestekoa badu, inportatu LDAP zerbitzariaren SSL ziurtagiria zure %s zerbitzarian.",
     "\"$home\" Placeholder Field" : "\"$home\" Leku-markaren eremua",
-    "UUID Attribute for Users:" : "Erabiltzaileentzako UUID atributuak:",
-    "UUID Attribute for Groups:" : "Taldeentzako UUID atributuak:",
     "Pronouns Field" : "Izenordainen eremua",
-    "User profile Pronouns will be set from the specified attribute" : "Erabiltzailearen profilaren Izenordaina zehaztutako ezaugarritik ezarriko da"
+    "User profile Pronouns will be set from the specified attribute" : "Erabiltzailearen profilaren Izenordaina zehaztutako ezaugarritik ezarriko da",
+    "UUID Attribute for Users:" : "Erabiltzaileentzako UUID atributuak:",
+    "UUID Attribute for Groups:" : "Taldeentzako UUID atributuak:"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

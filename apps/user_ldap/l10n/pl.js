@@ -24,8 +24,6 @@ OC.L10N.register(
     "A password is given, but not an LDAP agent" : "Podano hasło, ale nie wskazano agenta LDAP",
     "No password is given for the user agent" : "Nie podano hasła dla agenta użytkownika",
     "No LDAP base DN was given" : "Nie podano bazowego DN LDAP",
-    "User base DN is not a subnode of global base DN" : "Bazowy DN użytkownika nie jest podwęzłem globalnego DN",
-    "Group base DN is not a subnode of global base DN" : "Bazowy DN grupy nie jest podwęzłem globalnego DN",
     "Login filter does not contain %s placeholder." : "Filtr logowania nie zawiera zastępnika %s.",
     "Please login with the new password" : "Zaloguj się przy użyciu nowego hasła",
     "LDAP User backend" : "Moduł użytkownika LDAP",
@@ -193,7 +191,6 @@ OC.L10N.register(
     "Clear Groupname-LDAP Group Mapping" : "Czyść Mapowanie nazwy grupy LDAP",
     "Confirm action" : "Potwierdź akcję",
     "Are you sure you want to permanently delete this LDAP configuration? This cannot be undone." : "Czy na pewno chcesz trwale usunąć tę konfigurację LDAP? Tej operacji nie można cofnąć.",
-    "Fail to delete config" : "Nie udało się usunąć konfiguracji",
     "Are you sure you want to permanently clear the LDAP mapping? This cannot be undone." : "Czy na pewno chcesz trwale wyczyścić mapowanie LDAP? Tej operacji nie można cofnąć.",
     "Mapping cleared" : "Mapowanie wyczyszczone",
     "Failed to clear mapping" : "Nie udało się wyczyścić mapowania",
@@ -261,9 +258,9 @@ OC.L10N.register(
     "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it." : "<b>Ostrzeżenie:</b> Moduł PHP LDAP jest niezainstalowany i nie będzie działał. Poproś administratora systemu o zainstalowanie go.",
     "Not recommended, use it for testing only! If connection only works with this option, import the LDAP server's SSL certificate in your %s server." : "Nie zalecane, używać tylko w celu testowania! Jeśli połączenie działa tylko z tą opcją, zaimportuj certyfikat SSL serwera LDAP na swój %s.",
     "\"$home\" Placeholder Field" : "Pole zastępcze \"$home\"",
-    "UUID Attribute for Users:" : "Atrybuty UUID dla użytkowników:",
-    "UUID Attribute for Groups:" : "Atrybuty UUID dla grup:",
     "Pronouns Field" : "Pole zaimków",
-    "User profile Pronouns will be set from the specified attribute" : "Zaimki w profilu użytkownika zostaną ustawione na podstawie określonego atrybutu"
+    "User profile Pronouns will be set from the specified attribute" : "Zaimki w profilu użytkownika zostaną ustawione na podstawie określonego atrybutu",
+    "UUID Attribute for Users:" : "Atrybuty UUID dla użytkowników:",
+    "UUID Attribute for Groups:" : "Atrybuty UUID dla grup:"
 },
 "nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);");

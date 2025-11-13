@@ -4,11 +4,12 @@
  */
 
 import type { AxiosError } from '@nextcloud/axios'
+import type { AxiosResponse } from '@nextcloud/axios'
 import type { OCSResponse } from '@nextcloud/typings/ocs'
 import type { LDAPConfig } from '../models/index.ts'
 
-import axios, { type AxiosResponse } from '@nextcloud/axios'
-import { DialogSeverity, getDialogBuilder, showError, showSuccess } from '@nextcloud/dialogs'
+import axios from '@nextcloud/axios'
+import { getDialogBuilder, showError, showSuccess } from '@nextcloud/dialogs'
 import { t } from '@nextcloud/l10n'
 import { generateOcsUrl, generateUrl } from '@nextcloud/router'
 import path from 'path'
@@ -106,7 +107,7 @@ export async function deleteConfig(configId: string): Promise<boolean> {
 		logger.debug('Deleted configuration', { configId })
 	} catch (error) {
 		const errorResponse = (error as AxiosError<OCSResponse>).response
-		showError(errorResponse?.data.ocs.meta.message || t('user_ldap', 'Fail to delete config'))
+		showError(errorResponse?.data.ocs.meta.message || t('user_ldap', 'Failed to delete config'))
 	}
 
 	return true
@@ -206,26 +207,23 @@ export async function showEnableAutomaticFilterInfo() {
  * @param text
  */
 export async function confirmOperation(name: string, text: string): Promise<boolean> {
-	return new Promise((resolve) => {
-		const dialog = getDialogBuilder(name)
-			.setText(text)
-			.setSeverity(DialogSeverity.Warning)
-			.addButton({
-				label: t('user_ldap', 'Cancel'),
-				callback() {
-					dialog.hide()
-					resolve(false)
-				},
-			})
-			.addButton({
-				label: t('user_ldap', 'Confirm'),
-				variant: 'error',
-				callback() {
-					resolve(true)
-				},
-			})
-			.build()
+	let result = false
+	const dialog = getDialogBuilder(name)
+		.setText(text)
+		.setSeverity('warning')
+		.addButton({
+			label: t('user_ldap', 'Cancel'),
+			callback() {},
+		})
+		.addButton({
+			label: t('user_ldap', 'Confirm'),
+			variant: 'error',
+			callback() {
+				result = true
+			},
+		})
+		.build()
 
-		dialog.show()
-	})
+	await dialog.show()
+	return result
 }

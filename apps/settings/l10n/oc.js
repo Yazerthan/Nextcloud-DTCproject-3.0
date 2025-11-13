@@ -75,6 +75,7 @@ OC.L10N.register(
     "Nextcloud settings" : "Paramètres Nextcloud",
     "Enable" : "Activar",
     "None" : "Pas cap",
+    "Enforce password protection" : "Afortir la proteccion per senhal",
     "Two-Factor Authentication" : "Autentificacion dos factors",
     "Limit to groups" : "Limitar als grops",
     "Save changes" : "Enregistrar las modificacions",
@@ -219,9 +220,6 @@ OC.L10N.register(
     "Follow us on Mastodon" : "Nos seguir sus Mastodon",
     "Check out our blog" : "Donar un còp d’uèlh a nòstre blòg",
     "Subscribe to our newsletter" : "S’abonar a l’infoletra",
-    "Set default expiration date for shares" : "Definir una data d’expiracion per defaut pels partatges",
-    "Your biography" : "Vòstra biografia",
-    "You are using <strong>{usage}</strong>" : "Utilizatz <strong>{usage}</strong>",
     "Adding your device …" : "Apondon del periferic…"
 },
 "nplurals=2; plural=(n > 1);");

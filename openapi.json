@@ -940,19 +940,20 @@
             "CoreTeam": {
                 "type": "object",
                 "required": [
-                    "id",
-                    "name",
-                    "icon"
+                    "teamId",
+                    "displayName",
+                    "link"
                 ],
                 "properties": {
-                    "id": {
+                    "teamId": {
                         "type": "string"
                     },
-                    "name": {
+                    "displayName": {
                         "type": "string"
                     },
-                    "icon": {
-                        "type": "string"
+                    "link": {
+                        "type": "string",
+                        "nullable": true
                     }
                 }
             },
@@ -964,12 +965,12 @@
                     "url",
                     "iconSvg",
                     "iconURL",
-                    "iconEmoji"
+                    "iconEmoji",
+                    "provider"
                 ],
                 "properties": {
                     "id": {
-                        "type": "integer",
-                        "format": "int64"
+                        "type": "string"
                     },
                     "label": {
                         "type": "string"
@@ -988,8 +989,48 @@
                     "iconEmoji": {
                         "type": "string",
                         "nullable": true
+                    },
+                    "provider": {
+                        "type": "object",
+                        "required": [
+                            "id",
+                            "name",
+                            "icon"
+                        ],
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "icon": {
+                                "type": "string"
+                            }
+                        }
                     }
                 }
+            },
+            "CoreTeamWithResources": {
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/CoreTeam"
+                    },
+                    {
+                        "type": "object",
+                        "required": [
+                            "resources"
+                        ],
+                        "properties": {
+                            "resources": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/CoreTeamResource"
+                                }
+                            }
+                        }
+                    }
+                ]
             },
             "CoreTextProcessingTask": {
                 "type": "object",
@@ -9819,7 +9860,7 @@
                                                         "teams": {
                                                             "type": "array",
                                                             "items": {
-                                                                "$ref": "#/components/schemas/CoreTeam"
+                                                                "$ref": "#/components/schemas/CoreTeamWithResources"
                                                             }
                                                         }
                                                     }
@@ -9959,7 +10000,6 @@
                     "core/text_processing_api"
                 ],
                 "security": [
-                    {},
                     {
                         "bearer_auth": []
                     },
@@ -10165,6 +10205,34 @@
                                 }
                             }
                         }
+                    },
+                    "401": {
+                        "description": "Current user is not logged in",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -10177,7 +10245,6 @@
                     "core/text_processing_api"
                 ],
                 "security": [
-                    {},
                     {
                         "bearer_auth": []
                     },
@@ -10315,6 +10382,34 @@
                                                         }
                                                     }
                                                 }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Current user is not logged in",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {}
                                             }
                                         }
                                     }
@@ -10671,7 +10766,6 @@
                     "core/text_to_image_api"
                 ],
                 "security": [
-                    {},
                     {
                         "bearer_auth": []
                     },
@@ -10729,6 +10823,34 @@
                                 }
                             }
                         }
+                    },
+                    "401": {
+                        "description": "Current user is not logged in",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -10741,7 +10863,6 @@
                     "core/text_to_image_api"
                 ],
                 "security": [
-                    {},
                     {
                         "bearer_auth": []
                     },
@@ -10910,6 +11031,34 @@
                                 }
                             }
                         }
+                    },
+                    "401": {
+                        "description": "Current user is not logged in",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -10922,7 +11071,6 @@
                     "core/text_to_image_api"
                 ],
                 "security": [
-                    {},
                     {
                         "bearer_auth": []
                     },
@@ -11060,6 +11208,34 @@
                                                         }
                                                     }
                                                 }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Current user is not logged in",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {}
                                             }
                                         }
                                     }
@@ -11259,7 +11435,6 @@
                     "core/text_to_image_api"
                 ],
                 "security": [
-                    {},
                     {
                         "bearer_auth": []
                     },
@@ -11380,6 +11555,34 @@
                                                         }
                                                     }
                                                 }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Current user is not logged in",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {}
                                             }
                                         }
                                     }
@@ -14381,6 +14584,12 @@
                                         "nullable": true,
                                         "default": null,
                                         "description": "An error message if the task failed"
+                                    },
+                                    "userFacingErrorMessage": {
+                                        "type": "string",
+                                        "nullable": true,
+                                        "default": null,
+                                        "description": "An error message that will be shown to the user"
                                     }
                                 }
                             }
@@ -14688,6 +14897,223 @@
                     },
                     "204": {
                         "description": "No task found"
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {
+                                                    "type": "object",
+                                                    "required": [
+                                                        "message"
+                                                    ],
+                                                    "properties": {
+                                                        "message": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Current user is not logged in",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Logged in account must be an admin",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/ocs/v2.php/taskprocessing/tasks_provider/next_batch": {
+            "get": {
+                "operationId": "core-task_processing_api-get-next-scheduled-task-batch",
+                "summary": "Returns the next n scheduled tasks for the specified set of taskTypes and providers The returned tasks are capped at ~50MiB",
+                "description": "This endpoint requires admin access",
+                "tags": [
+                    "core/task_processing_api"
+                ],
+                "security": [
+                    {
+                        "bearer_auth": []
+                    },
+                    {
+                        "basic_auth": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "providerIds[]",
+                        "in": "query",
+                        "description": "The ids of the providers",
+                        "required": true,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "taskTypeIds[]",
+                        "in": "query",
+                        "description": "The ids of the task types",
+                        "required": true,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "numberOfTasks",
+                        "in": "query",
+                        "description": "The number of tasks to return",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64",
+                            "default": 1
+                        }
+                    },
+                    {
+                        "name": "OCS-APIRequest",
+                        "in": "header",
+                        "description": "Required to be true for the API request to pass",
+                        "required": true,
+                        "schema": {
+                            "type": "boolean",
+                            "default": true
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Tasks returned",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "ocs"
+                                    ],
+                                    "properties": {
+                                        "ocs": {
+                                            "type": "object",
+                                            "required": [
+                                                "meta",
+                                                "data"
+                                            ],
+                                            "properties": {
+                                                "meta": {
+                                                    "$ref": "#/components/schemas/OCSMeta"
+                                                },
+                                                "data": {
+                                                    "type": "object",
+                                                    "required": [
+                                                        "tasks",
+                                                        "has_more"
+                                                    ],
+                                                    "properties": {
+                                                        "tasks": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "task",
+                                                                    "provider"
+                                                                ],
+                                                                "properties": {
+                                                                    "task": {
+                                                                        "$ref": "#/components/schemas/CoreTaskProcessingTask"
+                                                                    },
+                                                                    "provider": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "has_more": {
+                                                            "type": "boolean"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     },
                     "500": {
                         "description": "",
@@ -15565,7 +15991,7 @@
                                 "required": [
                                     "recipientProvider",
                                     "token",
-                                    "userId",
+                                    "userID",
                                     "email",
                                     "name"
                                 ],
@@ -15578,9 +16004,9 @@
                                         "type": "string",
                                         "description": "The token used for the invitation"
                                     },
-                                    "userId": {
+                                    "userID": {
                                         "type": "string",
-                                        "description": "The userId of the recipient at the recipient's provider"
+                                        "description": "The userID of the recipient at the recipient's provider"
                                     },
                                     "email": {
                                         "type": "string",

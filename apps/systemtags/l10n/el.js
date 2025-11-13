@@ -63,6 +63,7 @@ OC.L10N.register(
     "Update" : "Ενημέρωση",
     "Delete" : "Διαγραφή",
     "Reset" : "Επαναφορά",
+    "Loading …" : "Φόρτωση …",
     "_{tag1} will be set and {tag2} will be removed from 1 file._::_{tag1} will be set and {tag2} will be removed from {count} files._" : ["Η ετικέτα {tag1} θα οριστεί και η ετικέτα {tag2} θα αφαιρεθεί από 1 αρχείο.","Η ετικέτα {tag1} θα οριστεί και η ετικέτα {tag2} θα αφαιρεθεί από {count} αρχεία."],
     "_{tag} will be set to 1 file._::_{tag} will be set to {count} files._" : ["Η ετικέτα {tag} θα οριστεί σε 1 αρχείο.","Η ετικέτα {tag} θα οριστεί σε {count} αρχεία."],
     "_{tag} will be removed from 1 file._::_{tag} will be removed from {count} files._" : ["Η ετικέτα {tag} θα αφαιρεθεί από 1 αρχείο.","Η ετικέτα {tag} θα αφαιρεθεί από {count} αρχεία."],
@@ -108,10 +109,10 @@ OC.L10N.register(
     "Failed to delete tag for file" : "Αποτυχία διαγραφής ετικέτας για το αρχείο",
     "Collaborative tags …" : "Συνεργατικές ετικέτες…",
     "Loading …" : "Γίνεται φόρτωση…",
-    "Loading collaborative tags …" : "Φόρτωση συνεργατικών ετικετών…",
     "File tags modification canceled" : "Η τροποποίηση ετικετών αρχείου ακυρώθηκε",
     "Select or create tags to apply to all selected files" : "Επιλέξτε ή δημιουργήστε ετικέτες για εφαρμογή σε όλα τα επιλεγμένα αρχεία",
     "Select tags to apply to all selected files" : "Επιλέξτε ετικέτες για εφαρμογή σε όλα τα επιλεγμένα αρχεία",
-    "Apply changes" : "Εφαρμογή αλλαγών"
+    "Apply changes" : "Εφαρμογή αλλαγών",
+    "Loading collaborative tags …" : "Φόρτωση συνεργατικών ετικετών…"
 },
 "nplurals=2; plural=(n != 1);");

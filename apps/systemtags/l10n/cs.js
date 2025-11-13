@@ -56,6 +56,7 @@ OC.L10N.register(
     "Failed to delete tag" : "Štítek se nepodařilo smazat",
     "Create or edit tags" : "Vytvořit nebo upravit štítky",
     "Search for a tag to edit" : "Vyhledat štítek pro úpravu",
+    "Collaborative tags …" : "Štítky pro spolupráci …",
     "No tags to select" : "Žádné štítky k výběru",
     "Tag name" : "Název štítku",
     "Tag level" : "Úroveň štítku",
@@ -86,6 +87,7 @@ OC.L10N.register(
     "Failed to load tags" : "Štítky se nepodařilo načíst",
     "Failed to select tag" : "Štítek se nepodařilo načíst",
     "System admin disabled tag creation. You can only use existing ones." : "Správce systému zakázal vytváření štítků. Je možné pouze používat ty stávající.",
+    "Loading collaborative tags …" : "Načítání štítků pro spolupráci …",
     "Search or create collaborative tags" : "Hledat nebo vytvořit štítky pro spolupráci",
     "No tags to select, type to create a new tag" : "Nevybrány žádné štítky k výběru – psaním vytvořte nový",
     "Unable to update setting" : "Nedaří se nahrát nastavení",
@@ -109,10 +111,10 @@ OC.L10N.register(
     "Failed to delete tag for file" : "Nepodařilo se smazat štítek pro soubor",
     "Collaborative tags …" : "Štítky pro spolupráci…",
     "Loading …" : "Načítání…",
-    "Loading collaborative tags …" : "Načítání štítků pro spolupráci…",
     "File tags modification canceled" : "Změna štítků souboru zrušena",
     "Select or create tags to apply to all selected files" : "Vyberte nebo vytvořte štítky které uplatnit ne všechny označené soubory",
     "Select tags to apply to all selected files" : "Vybrat štítky které uplatnit na všechny vybrané soubory",
-    "Apply changes" : "Uplatnit změny"
+    "Apply changes" : "Uplatnit změny",
+    "Loading collaborative tags …" : "Načítání štítků pro spolupráci…"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");

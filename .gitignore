@@ -48,11 +48,6 @@
 !/apps/weather_status
 !/apps/webhook_listeners
 !/apps/workflowengine
-/apps/files_external/3rdparty/irodsphp/PHPUnitTest
-/apps/files_external/3rdparty/irodsphp/web
-/apps/files_external/3rdparty/irodsphp/prods/test
-/apps/files_external/3rdparty/irodsphp/prods/tutorials
-/apps/files_external/3rdparty/irodsphp/prods/test*
 /apps/files_external/tests/config.*.php
 
 # apps modules

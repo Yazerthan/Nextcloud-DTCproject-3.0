@@ -56,6 +56,7 @@ OC.L10N.register(
     "Failed to delete tag" : "Etiket silinemedi",
     "Create or edit tags" : "Etiket ekle ya da düzenle",
     "Search for a tag to edit" : "Düzenlemek için bir etiket ara",
+    "Collaborative tags …" : "İş birlikli etiketler…",
     "No tags to select" : "Seçilebilecek bir etiket yok",
     "Tag name" : "Etiket adı",
     "Tag level" : "Etiket düzeyi",
@@ -86,6 +87,7 @@ OC.L10N.register(
     "Failed to load tags" : "Etiketler yüklenemedi",
     "Failed to select tag" : "Seçilmiş etiket yüklenemedi",
     "System admin disabled tag creation. You can only use existing ones." : "Sistem yöneticisi etiket oluşturma iznini kaldırmış. Yalnızca var olan etiketleri kullanabilirsiniz.",
+    "Loading collaborative tags …" : "İş birlikli etiketler yükleniyor…",
     "Search or create collaborative tags" : "İş birlikli etiket ara ya da ekle",
     "No tags to select, type to create a new tag" : "Seçilebilecek herhangi bir etiket yok. Yazarak yeni bir etiket ekleyin",
     "Unable to update setting" : "Ayar güncellenemedi",
@@ -109,10 +111,10 @@ OC.L10N.register(
     "Failed to delete tag for file" : "Dosyanın etiketi silinemedi",
     "Collaborative tags …" : "İş birlikli etiketler…",
     "Loading …" : "Yükleniyor…",
-    "Loading collaborative tags …" : "İş birlikli etiketler yükleniyor…",
     "File tags modification canceled" : "Dosya etiket değişikliği iptal edildi",
     "Select or create tags to apply to all selected files" : "Tüm seçilmiş dosyalara uygulanacak etiketleri seçin ya da oluşturun",
     "Select tags to apply to all selected files" : "Tüm seçilmiş dosyalara uygulanacak etiketleri seçin",
-    "Apply changes" : "Değişiklikleri uygula"
+    "Apply changes" : "Değişiklikleri uygula",
+    "Loading collaborative tags …" : "İş birlikli etiketler yükleniyor…"
 },
 "nplurals=2; plural=(n > 1);");

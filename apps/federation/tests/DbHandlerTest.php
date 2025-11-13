@@ -16,9 +16,7 @@ use OCP\Server;
 use PHPUnit\Framework\MockObject\MockObject;
 use Test\TestCase;
 
-/**
- * @group DB
- */
+#[\PHPUnit\Framework\Attributes\Group('DB')]
 class DbHandlerTest extends TestCase {
 	private DbHandler $dbHandler;
 	private IL10N&MockObject $il10n;
@@ -63,7 +61,7 @@ class DbHandlerTest extends TestCase {
 
 		$query = $this->connection->getQueryBuilder()->select('*')->from($this->dbTable);
 
-		$qResult = $query->execute();
+		$qResult = $query->executeQuery();
 		$result = $qResult->fetchAll();
 		$qResult->closeCursor();
 		$this->assertCount(1, $result);
@@ -87,7 +85,7 @@ class DbHandlerTest extends TestCase {
 
 		$query = $this->connection->getQueryBuilder()->select('*')->from($this->dbTable);
 
-		$qResult = $query->execute();
+		$qResult = $query->executeQuery();
 		$result = $qResult->fetchAll();
 		$qResult->closeCursor();
 		$this->assertCount(2, $result);
@@ -99,7 +97,7 @@ class DbHandlerTest extends TestCase {
 		$this->dbHandler->removeServer($id2);
 		$query = $this->connection->getQueryBuilder()->select('*')->from($this->dbTable);
 
-		$qResult = $query->execute();
+		$qResult = $query->executeQuery();
 		$result = $qResult->fetchAll();
 		$qResult->closeCursor();
 		$this->assertCount(1, $result);
@@ -175,7 +173,7 @@ class DbHandlerTest extends TestCase {
 		$this->dbHandler->addServer('server1');
 		$query = $this->connection->getQueryBuilder()->select('*')->from($this->dbTable);
 
-		$qResult = $query->execute();
+		$qResult = $query->executeQuery();
 		$result = $qResult->fetchAll();
 		$qResult->closeCursor();
 		$this->assertCount(1, $result);
@@ -183,7 +181,7 @@ class DbHandlerTest extends TestCase {
 		$this->dbHandler->addSharedSecret('http://server1', 'secret');
 		$query = $this->connection->getQueryBuilder()->select('*')->from($this->dbTable);
 
-		$qResult = $query->execute();
+		$qResult = $query->executeQuery();
 		$result = $qResult->fetchAll();
 		$qResult->closeCursor();
 		$this->assertCount(1, $result);

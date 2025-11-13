@@ -40,8 +40,8 @@ use Test\TestCase;
  * Class ManagerTest
  *
  * @package OCA\WorkflowEngine\Tests
- * @group DB
  */
+#[\PHPUnit\Framework\Attributes\Group('DB')]
 class ManagerTest extends TestCase {
 	protected Manager $manager;
 	protected IDBConnection $db;
@@ -107,7 +107,7 @@ class ManagerTest extends TestCase {
 		$query = $this->db->getQueryBuilder();
 		foreach (['flow_checks', 'flow_operations', 'flow_operations_scope'] as $table) {
 			$query->delete($table)
-				->execute();
+				->executeStatement();
 		}
 	}
 

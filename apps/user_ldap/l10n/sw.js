@@ -23,8 +23,6 @@ OC.L10N.register(
     "A password is given, but not an LDAP agent" : "Nenosiri limetolewa, lakini si wakala wa LDAP",
     "No password is given for the user agent" : "Hakuna nenosiri lililotolewa kwa wakala wa mtumiaji",
     "No LDAP base DN was given" : "Hakuna msingi wa LDAP wa DN uliotolewa",
-    "User base DN is not a subnode of global base DN" : "Msingi wa mtumiaji DN sio nodi ndogo ya DN ya kimataifa",
-    "Group base DN is not a subnode of global base DN" : "DN ya msingi ya kikundi si nodi ndogo ya DN ya kimataifa",
     "Login filter does not contain %s placeholder." : "Kichujio cha kuingia hakina kishika nafasi %s.",
     "Please login with the new password" : "Tafadhali ingia ukitumia nenosiri jipya ",
     "LDAP User backend" : "Nyuma ya Mtumiaji wa LDAP",
@@ -192,7 +190,6 @@ OC.L10N.register(
     "Clear Groupname-LDAP Group Mapping" : "Futa Ramani ya Kikundi cha Groupname-LDAP",
     "Confirm action" : "Thibitisha kitendo",
     "Are you sure you want to permanently delete this LDAP configuration? This cannot be undone." : "Je, una uhakika unataka kufuta kabisa usanidi huu wa LDAP? Hili haliwezi kutenduliwa.",
-    "Fail to delete config" : "Imeshindwa kufuta usanidi",
     "Are you sure you want to permanently clear the LDAP mapping? This cannot be undone." : "Je, una uhakika unataka kufuta kabisa ramani ya LDAP? Hili haliwezi kutenduliwa.",
     "Mapping cleared" : "Uchoraji ramani umefutwa",
     "Failed to clear mapping" : "Imeshindwa kufuta uchoraji ramani",
@@ -260,9 +257,9 @@ OC.L10N.register(
     "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it." : "<b>Onyo:</b> Moduli ya PHP LDAP haijasakinishwa, mazingira ya nyuma hayatafanya kazi. Tafadhali muulize msimamizi wa mfumo wako aisakinishe.",
     "Not recommended, use it for testing only! If connection only works with this option, import the LDAP server's SSL certificate in your %s server." : "Haipendekezwi, itumie kwa majaribio tu! Ikiwa muunganisho utafanya kazi kwa chaguo hili pekee, leta cheti cha SSL cha seva ya LDAP kwenye seva yako ya %s.",
     "\"$home\" Placeholder Field" : "Sehemu ya \"$home\" ya Kishika nafasi",
-    "UUID Attribute for Users:" : "Sifa ya UUID kwa watumiaji",
-    "UUID Attribute for Groups:" : "Sifa ya UUID kwa Vikundi:",
     "Pronouns Field" : "Uwanja wa Viwakilishi",
-    "User profile Pronouns will be set from the specified attribute" : "Viwakilishi vya wasifu wa mtumiaji vitawekwa kutoka kwa sifa iliyobainishwa"
+    "User profile Pronouns will be set from the specified attribute" : "Viwakilishi vya wasifu wa mtumiaji vitawekwa kutoka kwa sifa iliyobainishwa",
+    "UUID Attribute for Users:" : "Sifa ya UUID kwa watumiaji",
+    "UUID Attribute for Groups:" : "Sifa ya UUID kwa Vikundi:"
 },
 "nplurals=2; plural=(n != 1);");

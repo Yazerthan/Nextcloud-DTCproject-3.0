@@ -53,9 +53,7 @@ class CleaningDBConfig extends DBConfigService {
 	}
 }
 
-/**
- * @group DB
- */
+#[\PHPUnit\Framework\Attributes\Group('DB')]
 abstract class StoragesServiceTestCase extends \Test\TestCase {
 	protected StoragesService $service;
 	protected BackendService&MockObject $backendService;
@@ -315,7 +313,7 @@ abstract class StoragesServiceTestCase extends \Test\TestCase {
 			->from('storages')
 			->where($qb->expr()->eq('numeric_id', $qb->expr()->literal($numericId)));
 
-		$result = $storageCheckQuery->execute();
+		$result = $storageCheckQuery->executeQuery();
 		$storages = $result->fetchAll();
 		$result->closeCursor();
 		$this->assertCount(0, $storages, 'expected 0 storages, got ' . json_encode($storages));

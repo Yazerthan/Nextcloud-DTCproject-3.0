@@ -24,8 +24,6 @@ OC.L10N.register(
     "A password is given, but not an LDAP agent" : "パスワードは与えられています、LDAPエージェントは与えられていません",
     "No password is given for the user agent" : "ユーザーエージェントにパスワードが与えられていません",
     "No LDAP base DN was given" : "LDAPベースDNが指定されていません",
-    "User base DN is not a subnode of global base DN" : "ユーザーベースDNはグローバルベースDNのサブノードではありません",
-    "Group base DN is not a subnode of global base DN" : "グループベースDNがグローバルベースDNのサブノードではありません",
     "Login filter does not contain %s placeholder." : "ログインフィルタに%sプレースホルダが含まれていません。",
     "Please login with the new password" : "新しいパスワードでログインしてください",
     "LDAP User backend" : "LDAPユーザーバックエンド",
@@ -193,7 +191,6 @@ OC.L10N.register(
     "Clear Groupname-LDAP Group Mapping" : "グループ名とLDAPグループのマッピングをクリアする",
     "Confirm action" : "アクションの確認",
     "Are you sure you want to permanently delete this LDAP configuration? This cannot be undone." : "このLDAP設定を完全に削除してもよろしいですか？この操作は元に戻せません。",
-    "Fail to delete config" : "設定の削除に失敗しました",
     "Are you sure you want to permanently clear the LDAP mapping? This cannot be undone." : "LDAPマッピングを完全に削除してもよろしいですか？この操作は元に戻せません。",
     "Mapping cleared" : "マッピングがクリアされました",
     "Failed to clear mapping" : "マッピングをクリアできませんでした",
@@ -261,9 +258,9 @@ OC.L10N.register(
     "<b>Warning:</b> The PHP LDAP module is not installed, the backend will not work. Please ask your system administrator to install it." : "<b>警告:</b> PHP LDAP モジュールがインストールされていません。バックエンド接続が正しく動作しません。システム管理者にインストールするよう問い合わせてください。",
     "Not recommended, use it for testing only! If connection only works with this option, import the LDAP server's SSL certificate in your %s server." : "推奨されません、テストにおいてのみ使用してください！このオプションでのみ接続が動作する場合は、LDAP サーバーのSSL証明書を %s サーバーにインポートしてください。",
     "\"$home\" Placeholder Field" : "\"$home\" 属性設定",
-    "UUID Attribute for Users:" : "ユーザーのUUID属性:",
-    "UUID Attribute for Groups:" : "グループの UUID 属性:",
     "Pronouns Field" : "代名詞フィールド",
-    "User profile Pronouns will be set from the specified attribute" : "ユーザープロファイルの代名詞は、指定された属性から設定されます"
+    "User profile Pronouns will be set from the specified attribute" : "ユーザープロファイルの代名詞は、指定された属性から設定されます",
+    "UUID Attribute for Users:" : "ユーザーのUUID属性:",
+    "UUID Attribute for Groups:" : "グループの UUID 属性:"
 },
 "nplurals=1; plural=0;");

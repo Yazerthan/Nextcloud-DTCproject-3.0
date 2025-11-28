@@ -4,11 +4,12 @@
 
     <div class="container" v-if="showUsers">
       <p class="userText">Nos utilisateurs</p>
-      <div class="user__container">
-        <button class="user_button" v-for="user in users" :key="user.uid">
+      <select name="user" id="user-select">
+        <option>-- Choisissez l'utilisateur --</option>
+        <option v-for="user in users" :key="user.uid">
           {{ user.displayName }} ({{ user.uid }})
-        </button>
-      </div>
+        </option>
+      </select>
     </div>
 
     <button class="showUser" @click="fetchUsers">
@@ -57,17 +58,7 @@ export default {
         console.error('Erreur lors du chargement des utilisateurs', e)
       }
     }
-  },
-  // methods: {
-  //   async UserName(){
-  //     if (!showUserName) {
-  //       showUserName = true;
-  //     } else {
-  //       showUserName = false;
-  //     }
-  //   }
-
-  // }
+  }
 }
 </script>
 

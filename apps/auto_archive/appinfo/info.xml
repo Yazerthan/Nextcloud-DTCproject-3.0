@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>auto_archive</id>
+	<name>Auto Archive</name>
+	<summary>Archivage automatique des documents</summary>
+	<description><![CDATA[
+	Cette application permet aux utilisateurs de déplacer facilement le contenu de leur dossier "officiel" vers un sous-dossier "archive" 
+	organisé par année. Elle crée automatiquement un dossier pour l'année en cours et y déplace tous les fichiers.
+	]]></description>
+	<version>1.0.0</version>
+	<licence>agpl</licence>
+	<author>Anonymous</author>
+	<namespace>AutoArchive</namespace>
+	<category>tools</category>
+	<dependencies>
+		<nextcloud min-version="30" max-version="33"/>
+	</dependencies>
+	<navigations>
+		<navigation>
+			<id>auto_archive</id>
+			<name>Auto Archive</name>
+			<route>auto_archive.page.index</route>
+			<icon>app.svg</icon>
+			<type>link</type>
+		</navigation>
+	</navigations>
+</info>

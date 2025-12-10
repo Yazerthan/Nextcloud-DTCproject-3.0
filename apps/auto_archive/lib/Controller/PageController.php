@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OCA\HelloWorld\Controller;
+namespace OCA\AutoArchive\Controller;
 
-use OCA\HelloWorld\AppInfo\Application;
+use OCA\AutoArchive\AppInfo\Application;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\Attribute\FrontpageRoute;
 use OCP\AppFramework\Http\Attribute\NoAdminRequired;
